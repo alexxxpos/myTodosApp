@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset=utf-8>
+		<title>My ToDos Application</title>
+		<link rel="stylesheet" media="all" href="css/stylesheets/style.css">
+		<script src="js/frameworks/jquery.min.js"></script>
+		<script src="js/frameworks/underscore.min.js"></script>
+	<!--	<script src="js/frameworks/json.js"></script> -->
+		<script src="js/frameworks/backbone.min.js"></script>
+
+
+
+
+
+		<script src="js/index.js"></script>
+	</head>
+	<body>
+
+		<div class='container'>
+			<div class='header_task'>
+				<div class="info"> <button></button> </div>
+				<div class="name">Название Task'a</div>
+				<div class="name"><button></button>|<button></button></div>
+			</div>
+
+			<div class='add_task_panel'>
+				<div class="plus"><button></button></div><div class="new_task"><input type="text" value="Start typing here to create task"/><button>Add task</button></div>
+			</div>
+
+			<div class='tasks_list'>
+				<div class="task_row">
+					<div class="check_box"><input type="checkbox" /></div> <div class="title">Open this mock-up in Adobe Fireworks</div> 
+					<div class="controls"></div>
+				</div>
+
+								<div class="task_row">
+					<div class="check_box"><input type="checkbox" /></div> <div class="title">Open this mock-up in Adobe Fireworks</div> 
+					<div class="controls"></div>
+				</div>
+								<div class="task_row">
+					<div class="check_box"><input type="checkbox" /></div> <div class="title">Open this mock-up in Adobe Fireworks</div> 
+					<div class="controls"></div>
+				</div>
+		
+
+		</div>
+
+
+
+		<div id="search_container"></div>
+
+		<script type="text/template" id="search_template">
+		    <label>Search</label>
+		    <input type="text" id="search_input" />
+		    <input type="button" id="search_button" value="Search" />
+		</script>
+
+	</body>
+</html>

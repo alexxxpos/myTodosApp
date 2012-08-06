@@ -1,0 +1,187 @@
+$header_border: #3C5E8F;
+$task_panel_border: #B7B7A7;
+
+$header_fill_color: #4069A7;
+$task_panel_fill_color: #D2D2D2;
+
+
+@function border_color($color){
+	@return desaturate(darken($color, 25%),50%);
+}
+
+
+.header_font{
+	color:white;
+	font-size: 20px;
+	font-family: Palatino, serif;
+}
+
+button{
+	margin: 0 auto;
+	cursor:pointer;
+    border: none;
+    width: 20px;
+    height: 20px;
+}
+.forbutton{
+	background-repeat:no-repeat;
+	background-size: 100%;
+}
+
+.container {
+	margin: 0 auto;
+	margin-top: 100px;
+	width: 800px;
+
+	.header_task{
+		@extend .header_font;
+		@include border-radius(3px 3px 0px 0px);
+		min-height:40px;
+		border:1px solid;
+		border-color: $header_border;
+		background-color: $header_fill_color;
+		div{
+			 display:inline;
+			 margin: 10px;
+			 float:left;
+		}
+
+		*:first-child{
+			float: left;
+			button {
+				background: url('images/list.png');
+				background-repeat:no-repeat;
+				background-size: 100%;
+			}
+			
+		}
+
+		*:last-child{
+			float: right;
+
+			*:first-child{
+				background: url('images/edit.png');
+				background-repeat:no-repeat;
+				background-size: 100%;
+			}
+
+			*:last-child{
+				background: url('images/drop.png');
+				background-repeat:no-repeat;
+				background-size: 100%;
+			}
+		}
+
+
+
+	}
+
+	.add_task_panel{
+		min-height:40px;
+		border:1px solid;
+		border-color: $task_panel_border;
+		background-color: $task_panel_fill_color;
+		div{
+			 
+			 display:inline;
+		
+		}
+
+		.plus{
+			float: left;
+			padding-top: 1.5%;
+			padding-left: 2%;
+			padding-right: 2%;
+			button {
+				background: url('images/plus.png');
+				background-repeat:no-repeat;
+				background-size: 100%;
+			}
+			
+		}
+
+		.new_task{
+
+			color:#599071;
+
+			input{
+				height: 25px;
+				width: 75%;
+				color:#9C9C9C;
+				padding-left: 1%;
+				@include border-radius(4px 0px 0px 4px);
+				margin-top: 0.5%;
+			}
+			button{
+				height: 30px;
+				width: 100px;
+				background-color: #6DA485;
+				@include border-radius(0px 4px 4px 0px);
+				color: white;
+				font-weight:bold;
+				text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+			}
+			
+		}
+
+	}
+
+	.tasks_list{
+		border:1px solid;
+		border-color: $task_panel_border;
+		@include border-radius(0px 0px 10px 10px);
+
+
+
+		div.task_row{
+			height: 40px;
+			border-bottom:1px solid;
+			border-color: $task_panel_border;
+			color:#9C9C9C;
+			div{
+				float: left;
+				text-align: center;
+				line-height: 40px;
+			}
+
+			.check_box{
+				width: 6%;
+				height: 100%;
+				border-right:1px solid;
+
+				border-color: $task_panel_border;
+			}
+			.title{
+				width: 73%;
+				height: 100%;
+
+				margin-left: 1%;
+				border-left:1px solid;
+				border-right:1px solid;
+				border-color: $task_panel_border;
+				text-align: left;
+				padding-left: 2%;
+			}
+
+			&:last-child{
+				border:none;
+				height: 50px;
+			}
+
+			&:last-child:hover{
+				@include border-radius(10px 10px 10px 10px);
+				border:none;
+				height: 50px;
+			}
+
+
+		}
+		div.task_row:hover{
+			background-color: #FCFED0;
+		}
+
+
+	}
+
+
+}

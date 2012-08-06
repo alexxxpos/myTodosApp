@@ -1,0 +1,252 @@
+/* line 17, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 13, ../sass/_container.scss */
+.header_font, .container .header_task {
+  color: white;
+  font-size: 20px;
+  font-family: Palatino, serif;
+}
+
+/* line 19, ../sass/_container.scss */
+button {
+  margin: 0 auto;
+  cursor: pointer;
+  border: none;
+  width: 20px;
+  height: 20px;
+}
+
+/* line 26, ../sass/_container.scss */
+.forbutton {
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+/* line 31, ../sass/_container.scss */
+.container {
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 800px;
+}
+/* line 36, ../sass/_container.scss */
+.container .header_task {
+  -webkit-border-radius: 3px 3px 0px 0px;
+  -moz-border-radius: 3px 3px 0px 0px;
+  -ms-border-radius: 3px 3px 0px 0px;
+  -o-border-radius: 3px 3px 0px 0px;
+  border-radius: 3px 3px 0px 0px;
+  min-height: 40px;
+  border: 1px solid;
+  border-color: #3c5e8f;
+  background-color: #4069a7;
+}
+/* line 43, ../sass/_container.scss */
+.container .header_task div {
+  display: inline;
+  margin: 10px;
+  float: left;
+}
+/* line 49, ../sass/_container.scss */
+.container .header_task *:first-child {
+  float: left;
+}
+/* line 51, ../sass/_container.scss */
+.container .header_task *:first-child button {
+  background: url("images/list.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+/* line 59, ../sass/_container.scss */
+.container .header_task *:last-child {
+  float: right;
+}
+/* line 62, ../sass/_container.scss */
+.container .header_task *:last-child *:first-child {
+  background: url("images/edit.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+/* line 68, ../sass/_container.scss */
+.container .header_task *:last-child *:last-child {
+  background: url("images/drop.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+/* line 79, ../sass/_container.scss */
+.container .add_task_panel {
+  min-height: 40px;
+  border: 1px solid;
+  border-color: #b7b7a7;
+  background-color: #d2d2d2;
+}
+/* line 84, ../sass/_container.scss */
+.container .add_task_panel div {
+  display: inline;
+}
+/* line 90, ../sass/_container.scss */
+.container .add_task_panel .plus {
+  float: left;
+  padding-top: 1.5%;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+/* line 95, ../sass/_container.scss */
+.container .add_task_panel .plus button {
+  background: url("images/plus.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+/* line 103, ../sass/_container.scss */
+.container .add_task_panel .new_task {
+  color: #599071;
+}
+/* line 107, ../sass/_container.scss */
+.container .add_task_panel .new_task input {
+  height: 25px;
+  width: 75%;
+  color: #9C9C9C;
+  padding-left: 1%;
+  -webkit-border-radius: 4px 0px 0px 4px;
+  -moz-border-radius: 4px 0px 0px 4px;
+  -ms-border-radius: 4px 0px 0px 4px;
+  -o-border-radius: 4px 0px 0px 4px;
+  border-radius: 4px 0px 0px 4px;
+  margin-top: 0.5%;
+}
+/* line 115, ../sass/_container.scss */
+.container .add_task_panel .new_task button {
+  height: 30px;
+  width: 100px;
+  background-color: #6DA485;
+  -webkit-border-radius: 0px 4px 4px 0px;
+  -moz-border-radius: 0px 4px 4px 0px;
+  -ms-border-radius: 0px 4px 4px 0px;
+  -o-border-radius: 0px 4px 4px 0px;
+  border-radius: 0px 4px 4px 0px;
+  color: white;
+  font-weight: bold;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+/* line 129, ../sass/_container.scss */
+.container .tasks_list {
+  border: 1px solid;
+  border-color: #b7b7a7;
+  -webkit-border-radius: 0px 0px 10px 10px;
+  -moz-border-radius: 0px 0px 10px 10px;
+  -ms-border-radius: 0px 0px 10px 10px;
+  -o-border-radius: 0px 0px 10px 10px;
+  border-radius: 0px 0px 10px 10px;
+}
+/* line 136, ../sass/_container.scss */
+.container .tasks_list div.task_row {
+  height: 40px;
+  border-bottom: 1px solid;
+  border-color: #b7b7a7;
+  color: #9C9C9C;
+}
+/* line 141, ../sass/_container.scss */
+.container .tasks_list div.task_row div {
+  float: left;
+  text-align: center;
+  line-height: 40px;
+}
+/* line 147, ../sass/_container.scss */
+.container .tasks_list div.task_row .check_box {
+  width: 6%;
+  height: 100%;
+  border-right: 1px solid;
+  border-color: #b7b7a7;
+}
+/* line 154, ../sass/_container.scss */
+.container .tasks_list div.task_row .title {
+  width: 73%;
+  height: 100%;
+  margin-left: 1%;
+  border-left: 1px solid;
+  border-right: 1px solid;
+  border-color: #b7b7a7;
+  text-align: left;
+  padding-left: 2%;
+}
+/* line 166, ../sass/_container.scss */
+.container .tasks_list div.task_row:last-child {
+  border: none;
+  height: 50px;
+}
+/* line 171, ../sass/_container.scss */
+.container .tasks_list div.task_row:last-child:hover {
+  -webkit-border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -ms-border-radius: 10px 10px 10px 10px;
+  -o-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+  border: none;
+  height: 50px;
+}
+/* line 179, ../sass/_container.scss */
+.container .tasks_list div.task_row:hover {
+  background-color: #FCFED0;
+}
